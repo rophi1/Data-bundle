@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Bundle Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Data Bundle Shop</h1>
+    <p>Buy affordable internet data bundles instantly.</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Customer Details</h2>
+      <input type="email" id="email" placeholder="Enter your email" />
+      <input type="text" id="phone" placeholder="Enter your phone number" />
+    </section>
+
+    <section class="plans">
+      <div class="plan">
+        <h3>1 GB</h3>
+        <p>₵10</p>
+        <button onclick="payWithPaystack('1 GB Data Bundle', 10)">Buy Now</button>
+      </div>
+
+      <div class="plan">
+        <h3>5 GB</h3>
+        <p>₵45</p>
+        <button onclick="payWithPaystack('5 GB Data Bundle', 45)">Buy Now</button>
+      </div>
+
+      <div class="plan">
+        <h3>10 GB</h3>
+        <p>₵80</p>
+        <button onclick="payWithPaystack('10 GB Data Bundle', 80)">Buy Now</button>
+      </div>
+    </section>
+
+    <section class="info">
+      <h2>How it works</h2>
+      <ol>
+        <li>Select a data bundle.</li>
+        <li>Pay securely with Paystack.</li>
+        <li>After successful payment, contact the customer to deliver the bundle manually or connect an API later.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>Powered by Paystack</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
